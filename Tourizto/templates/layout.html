@@ -1,0 +1,351 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/layout.css'%}">
+    {% block csscontent %}
+    
+    {% endblock %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/3a846f1c1b.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed|Mitr|Rambla|Sue+Ellen+Francisco|Yesteryear&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200i,400,600,700&display=swap" rel="stylesheet">
+    <link href="{% static 'css/owl.theme.default.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet" type="text/css">
+    
+    {% block title %}
+    
+    {% endblock %}
+
+</head>
+<body>
+    <!--Navbar-->
+    {% if title == 'Home'%}
+    <div class="jumbotron">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="{% url 'home' %}" style="font-family: 'Bangers', cursive;font-weight: 400;">TOURIZTO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                {% if user.is_staff %}
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'new_itenary' %}">ADD DESTINATION</a>
+                        </li>
+                    </ul>
+                {% endif %}
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'home' %}">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'travelouge' %}">TRAVELOUGE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'experience' %}">EXPERIENCE</a>
+                    </li>
+                    {% if user.is_authenticated %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 18px;">
+                        Welcome <b>{{request.user}}</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{% url 'profile' %}">My Pofile</a>
+                            <a class="dropdown-item" href="{% url 'mybookings' %}">My Bookings</a>
+                            <a class="dropdown-item" href="{% url 'logoutview' %}">Logout</a>
+                        </div>
+                    </li>
+                    {% else %}
+                    <!-- Button trigger modal -->
+                    <li class="nav-item" type="button" data-toggle="modal" data-target="#loginModal">
+                        <a class="nav-link">LOGIN</a>
+                    </li>
+                    <!-- Button trigger modal -->
+                    <li class="nav-item" type="button" data-toggle="modal" data-target="#signupModal">
+                        <a class="nav-link">SIGNUP</a>
+                    </li>  
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+    </div>
+    {% elif title == 'Travelouge' or title == 'Blog' or title == 'Experience' %}
+    <div class="jumbotron">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="{% url 'home' %}" style="font-family: 'Bangers', cursive;font-weight: 400;">TOURIZTO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'home' %}">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'experience' %}">EXPERIENCE</a>
+                    </li>
+                    {% if user.is_authenticated %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 18px;">
+                        Welcome <b>{{request.user}}</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{% url 'profile' %}">My Pofile</a>
+                            <a class="dropdown-item" href="{% url 'new_review' %}">Share Review</a>
+                            {% if user.is_staff %}
+                            <a class="dropdown-item" href="{% url 'new_blog' %}">New Blog</a>
+                            {% endif %}
+                            <a class="dropdown-item" href="{% url 'logoutview' %}">Logout</a>
+                        </div>
+                    </li>
+                    {% else %}
+                    <!-- Button trigger modal -->
+                    <li class="nav-item" type="button" data-toggle="modal" data-target="#loginModal">
+                        <a class="nav-link">LOGIN</a>
+                    </li>
+                    <!-- Button trigger modal -->
+                    <li class="nav-item" type="button" data-toggle="modal" data-target="#signupModal">
+                        <a class="nav-link">SIGNUP</a>
+                    </li>
+                    
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+        <br>
+        {% block jumbotron %}
+
+        {% endblock %}
+    </div>
+    {% else %}
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="{% url 'home' %}" style="font-family: 'Bangers', cursive;font-weight: 400;">TOURIZTO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            {% if user.is_staff %}
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'new_itenary' %}">ADD DESTINATION</a>
+                    </li>
+                </ul>
+            {% endif %}
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'home' %}">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'travelouge' %}">TRAVELOUGE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'experience' %}">EXPERIENCE</a>
+                </li>
+                {% if user.is_authenticated %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 18px;">
+                    Welcome <b>{{request.user}}</b>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{% url 'profile' %}">My Pofile</a>
+                        <a class="dropdown-item" href="{% url 'mybookings' %}">My Bookings</a>
+                        <a class="dropdown-item" href="{% url 'new_review' %}">Share Review</a>
+                        {% if user.is_staff %}
+                        <a class="dropdown-item" href="{% url 'new_blog' %}">New Blog</a>
+                        {% endif %}
+                        <a class="dropdown-item" href="{% url 'logoutview' %}" style="padding: 0%;">Logout</a>
+                    </div>
+                </li>
+                {% else %}
+                <!-- Button trigger modal -->
+                <li class="nav-item" type="button" data-toggle="modal" data-target="#loginModal">
+                    <a class="nav-link">LOGIN</a>
+                </li>
+                <!-- Button trigger modal -->
+                <li class="nav-item" type="button" data-toggle="modal" data-target="#signupModal">
+                    <a class="nav-link">SIGNUP</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+    {% endif %}
+
+
+
+    <!--Message display-->
+    {% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-{{message.tags}} alert-dismissible fade show my-2 ml-auto mr-auto" style="width: fit-content;" role="alert">
+            <strong> Message : </strong> {{message}}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+    {% endif %}
+    
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Sign Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="{% url 'register' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstname">Firstname</label>
+                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter Firstname" required>
+                    </div>   
+                    <div class="form-group">
+                        <label for="lastname">Lastname</label>
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Lastname" required>
+                    </div>                     
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    </div> 
+                    <div class="form-group">
+                        <label for="password1">Password</label>
+                        <input type="password" class="form-control" id="password1" name="password1" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" class="form-control" id="password2" name="password2" placeholder=" Confirm Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Sign In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="{% url 'loginview' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="loginusername">Username</label>
+                            <input type="text" class="form-control" name="loginusername" id="loginusername" aria-describedby="emailHelp" placeholder="Enter username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginpassword">Password</label>
+                            <input type="password" class="form-control" name="loginpassword" id="loginpassword" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Webpage Content-->
+    {% block content %}
+    {% endblock %}
+    
+    <!-- Chatbot Link-->
+    {% block chat %}
+    
+    {% endblock %}
+   
+    <!--Footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+        <div class="col-md-3 col-sm-4 ">
+            <h3 >ABOUT</a></h3>
+            <p>Way back in 1998, we had the vision to create a world of affordable travel. Destiny had presented us with the golden opportunity to explore new avenues in tourism and hence the idea of tour my india was conceived.</p>
+        </div>
+        <div class="col-md-3 col-sm-4 ">
+            <h3>ADDRESS</h3>
+            <p>A/1001,OBEROI TOWER,</p>
+            <p>TAGORE ROAD,</p>
+            <p>WORLI,</p>
+            <p> MUMBAI-400018.</p>
+            <p>MAHARASHTRA (INDIA).</p>
+        </div>
+        <div class="col-md-3 col-sm-4">
+            <h3>CONTACT DETAILS</h3>
+            <p>info@tourmyindia.com</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i>   +91 079 26405333</p>
+            <p><i class="fa fa-mobile" aria-hidden="true"></i> &nbsp +91 9427698222</p>
+        </div>
+        <div class="col-md-3 col-sm-4">
+            <h3>SITE MAP</h3>
+            <a href="#" id="idk">HOME</a><br>
+            <a href="#" id="idk">ABOUT</a><br>
+            <a href="#" id="idk">TRAVEL BY MONTH</a><br>
+            <a href="#"id="idk">PACKAGES</a><br>
+            <a href="#" id="idk">TERMS AND CONDITION</a><br>
+            <a href="#" id="idk">AIRLINE DETAILS</a>
+        </div>
+    </div>
+            <div>
+                <a href="https://www.facebook.com/" id="idk"><i class="fab fa-facebook"></i></a>&nbsp
+                <a href="https://www.instagram.com/" id="idk">    <i class="fab fa-instagram"></i></a>&nbsp
+                <a href="https://twitter.com/login" id="idk">     <i class="fab fa-twitter"></i></a>&nbsp
+                <a href="https://aboutme.google.com/u/0/?referer=gplus" id="idk">     <i class="fab fa-google-plus"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <p><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>  2018 TourMyIndia ALL RIGHTS RESERVED</p>
+    </div>
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="{% static 'js/owl.carousel.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/jquery.min.css' %}" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            center: true,
+            margin:10,
+            nav:true,
+            autoWidth:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block csscontent %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mybooking.css' %}">
+{% endblock %}
+
+{% block title %}
+    <title>My bookings</title> 
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <br>
+    <br>
+    <h3 style="text-align: center;"> My Bookings </h3>
+    <br>
+    {% for mybooking in mybookings %}
+    <table>
+        <tr>
+            <th>{{forloop.counter}}. Destination</th>
+            <th>{{mybooking.destination.name}}</th>
+        </tr>
+        <tr>
+            <td>Number of Adults</td>
+            <td>{{mybooking.number_of_adults}}</td>
+        </tr>
+        <tr>
+            <td>Number of Children</td>
+            <td>{{mybooking.number_of_children}}</td>
+        </tr>
+        <tr>
+            <td>Accomodation</td>
+            <td>{{mybooking.accommodation}}</td>
+        </tr>
+        <tr>
+            <td>Total Price</td>
+            <td>INR {{mybooking.total_price}}</td>
+        </tr>
+        <tr>
+            <td>Departute Date</td>
+            <td> {{mybooking.departure_date}}</td>
+        </tr>
+        <tr>
+            <td>Arrival Date</td>
+            <td>{{mybooking.arrival_date}}</td>
+        </tr>
+        <tr>
+            <td>Booked on</td>
+            <td>{{mybooking.timestamp}}</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    {% endfor %}
+    <br>
+    <br>
+    <br>
+</div>
+{% endblock %}

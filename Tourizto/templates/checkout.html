@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block csscontent %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mybooking.css' %}">
+{% endblock %}
+
+{% block title %}
+    <title>Booking</title>
+{% endblock %}
+
+{% block content %}
+<div class="container" style="margin: auto;">
+    <br>
+    <br>
+    <h3 style="text-align: center;">Booking Details</h3>
+    <br>
+    <table>
+        <tr>
+            <th>Destination</th>
+            <th>{{booking.destination.name}}</th>
+        </tr>
+        <tr>
+            <td>Customer Name</td>
+            <td>{{booking.customer_name}}</td>
+        </tr>
+        <tr>
+            <td>Customer Email</td>
+            <td>{{booking.customer_email}}</td>
+        </tr>
+        <tr>
+            <td>Number of Adults</td>
+            <td>{{booking.number_of_adults}}</td>
+        </tr>
+        <tr>
+            <td>Number of Children</td>
+            <td>{{booking.number_of_children}}</td>
+        </tr>
+        <tr>
+            <td>Accomodation</td>
+            <td>{{booking.accommodation}}</td>
+        </tr>
+        <tr>
+            <td>Total Price</td>
+            <td><b>INR {{booking.total_price}}</b></td>
+        </tr>
+        <tr>
+            <td>Departute Date</td>
+            <td> {{booking.departure_date}}</td>
+        </tr>
+        <tr>
+            <td>Arrival Date</td>
+            <td>{{booking.arrival_date}}</td>
+        </tr>
+        <tr>
+            <td>Booked on</td>
+            <td>{{booking.timestamp}}</td>
+        </tr>
+    </table>
+    <br>
+    <div style="text-align: center;">
+        <a href="{% url 'cart' booking.id %}">
+            <button class="btn btn-primary">Proceed for Payment</button>
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+  </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'layout.html '%}
+{% load static %}
+
+{% block content %}
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="box ml-auto mr-auto" style="padding: 60px; width:auto; height:auto; text-align:center;background-color:#e0e0e0; ">
+        <h4>Thank you for your purchase of INR {{booking.total_price}}</h4>
+        <br>
+        <a href="{% url 'confirm_order' booking.id %}">
+            <button class="btn btn-primary" >Get Confirmation Email</button>
+        </a>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}

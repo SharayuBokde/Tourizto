@@ -1,0 +1,43 @@
+{% extends 'layout.html '%}
+{% load static %}
+
+{% block csscontent %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/stripe.css' %}">
+{% endblock %}
+
+{% block content %}
+<br><br><br>
+<script src="https://js.stripe.com/v3/"></script>
+<div class="box ml-auto mr-auto" style="padding: 50px; background-color:#e0e0e0;; width: 500px;">
+  <form action="{% url 'charge' booking.id %}" method="post" id="payment-form">
+    {% csrf_token %}
+    <input type="email" name="email" placeholder="Email" required >
+    <input type="text" name="name" placeholder="Name" required >
+    <br>
+    <br>
+    <label>Amount : INR {{booking.total_price}}</label>
+    <br>
+    <div class="form-row" style="padding: 7px;">
+      <label for="card-element">Credit or debit card</label>
+      <div id="card-element">
+        <!-- A Stripe Element will be inserted here. -->
+      </div>
+      <!-- Used to display form errors. -->
+      <div id="card-errors" role="alert">
+      </div>
+    </div>
+    <br>
+    <div style="text-align: center;">
+      <button class="btn btn-primary">Pay</button>
+    </div>
+  </form>
+</div>
+
+<script src="{% static 'js/checkout.js' %}" type="text/javascript"></script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}

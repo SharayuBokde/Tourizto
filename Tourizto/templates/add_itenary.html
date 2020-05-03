@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block csscontent %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/add_itenary.css' %}">
+{% endblock %}
+
+{% block title %}
+    <title>Add Itenary</title>
+{% endblock %}
+
+{% block content %}
+<div class="newdestinationbox">
+    <form method="POST" action="" enctype="multipart/form-data">
+        <label><b>Add Itenary</b></label>
+        {% csrf_token %}
+        {{form|crispy}}
+        {{formset.as_table}}
+        <hr>
+        <input type="submit" class="btn btn-primary" value="Save">
+    </form>
+</div>
+{% endblock %}

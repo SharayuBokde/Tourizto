@@ -1,0 +1,129 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block csscontent %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% endblock %}
+    
+{% block title %}
+    <title>Home</title>
+{% endblock %}
+
+{% block content %}
+<br>
+<div class="container" id="about">
+    <br>
+    <div class="noOfTours">
+        <div class="container">
+        <div class="row">
+            <div class="col-5">
+            </div>
+            <div class="col-7 bgw">
+                <h1>Make Your Tour Memorable and Safe With Us </h1>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, porro pariatur nobis ea voluptatem ad,
+                    similique quasi consequatur dicta fugiat beatae. Molestiae iste ipsam nulla at magnam commodi asperiores ducimus!</p>
+                <br>
+                
+                <div class="row">
+                    <div class="col-4">
+                        <h2>100</h2>
+                        <h4>Successful Tours</h4>
+                    </div>
+                    <div class="col-4">
+                        <h2>1000</h2>
+                        <h4>Happy Tourists</h4>
+                    </div>
+                    <div class="col-4">
+                        <h2>50</h2>
+                        <h4>Places Explored</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <br>
+    <br>
+    <h2 class="best text-center ">BEST OFFERS!!</h2>
+    <br>
+    <div class="grid-container">
+        {% for dest in dests %}
+        <div class="grid-item">
+            <div class="card" style="width:22rem;">
+                <div class="img-text">
+                    <img src="{{dest.image.url}}" class="card-img-top images" alt="...">
+                    {% if dest.offer %}
+                    <div class="offer12">
+                        <p><span class="percent">{{dest.discount}}%</span> OFF</p></div>
+                        <span class="spOffer"></span>  
+                    {% endif %}  
+                </div>
+                <div class="card-body" style="text-align: center;">
+                    <a href="{% url 'view_itenary' dest.id %}"><h5 class="card-title">{{dest.name}}</h5></a>
+                    <p class="card-text">{{dest.duration}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>       
+</div>
+<br>
+<br>
+</div>
+</div>
+<hr>
+<div class="container-fluid sec-3">
+        <br>
+        <h2 class="why-us-t text-center">Why Tourizto??</h2>
+        <br>
+        <br>
+        <div class="row why">
+            <div class="col-sm-3 mr-5  why-us" id="first">
+                <i class="fas fa-coins icon"></i>
+                <br>
+                <br>
+                <h4 class="text-center m-0 ">BEST PRICE GUARANTEE</h4>
+                <br>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatibus odit iure adipisci, maxime fuga quod vero facere laborum dolorum dolore.</p>
+            </div>
+            <div class="col-sm-3 mr-5 why-us">
+                <i class="fas fa-thumbs-up icon"></i>
+                <br>
+                <br>
+                <h4 class="text-center m-0 ">HIGHLY QUALIFIED SERVICE</h4>
+                <br>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatibus odit iure adipisci, maxime fuga quod vero facere laborum dolorum dolore.</p>
+            </div>
+            <div class="col-sm-3 mr-5 why-us">
+                <i class="fas fa-user-shield icon"></i>
+                <br>
+                <br>
+                <h4 class="text-center m-0 ">24/7 SUPPORT</h4>
+                <br>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatibus odit iure adipisci, maxime fuga quod vero facere laborum dolorum dolore.</p>
+            </div>
+        </div> 
+</div>
+</div>
+<div class="offer-bg-bottom">
+    <div class="col-md-9 offer-bg-text text-center">
+        "Step out and travel with an ideal holiday planning done by our experts based on personalized experiences over guidebooks"
+    </div>
+    <div class="offer-bg-img">
+        <img src="{% static 'img/special-offer.png' %}">
+    </div>
+</div>
+{% endblock %}
+
+{% block chat %}
+    <a href="{% url 'chatbot' %}">
+        <img class="gif" src="{% static 'img/chat-big1.gif' %}" width="75" height="75">
+    </a>
+{% endblock %}

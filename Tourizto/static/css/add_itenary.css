@@ -1,0 +1,9 @@
+.newdestinationbox{
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    width: 550px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 30px;
+  }

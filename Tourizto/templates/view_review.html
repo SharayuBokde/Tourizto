@@ -1,0 +1,106 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block csscontent %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+    <style>
+        .jumbotron {
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position:center;
+            background-size: cover;
+        }
+        .jumbotron{
+            height: 70vh;
+            background-image: url({{review.thumbnail.url}});
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+{% endblock %}
+    
+{% block title %}
+    <title>{{review.title}}</title>
+{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <h1 class="text1">
+                {{review.title}}
+            </h1>
+        </div>
+        <div class="col-md-3">
+        {% if request.user.is_authenticated %}
+        {% if request.user in review.likes.all %}
+        <div class="row">
+            <a type="button" href="like/" style="padding:0%; margin: 0;" ><i class="fa fa-heart" style="font-size: 30; color:rgb(226, 55, 84);"></i></a> <h4> &nbsp;&nbsp; : {{review.likes.count}}</h4>
+        </div>
+        {% else %}
+        <div class="row">
+            <a type="button" href="like/" style="padding:0%; margin: 0; text-shadow: 0 0 5px rgb(226, 55, 84);"><i class="fa fa-heart" style="font-size: 30; 
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color:rgb(226, 56, 84);"></i></a> <h4> &nbsp;&nbsp; : {{review.likes.count}}</h4>
+        </div>
+        {% endif %}
+        {% else %}
+            <p><i class="fa fa-heart" style="font-size: 30; color:rgb(226, 55, 84);"></i> Likes : {{review.likes.count}}</p>
+        {% endif %} 
+        </div>
+    </div>
+    <br>
+    <div class="row" style="text-align: justify;">
+        {% for c in content %}
+        <p>{{c}}</p>
+        {% endfor %}
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-2">
+            <img class="rounded-circle article-img" src={{review.author.profile.image.url}} style="width: auto; height: 20px; ">
+        </div>
+        <div class="col-md-10">
+            <p>Author : {{review.author}}</p>
+            <p class="date">Posted on : {{review.time_stamp}}</p>
+        </div>
+    </div>
+    <br>
+    <br>  
+    {% if review.author == request.user %}
+    <div style="padding: 10px; text-align:center; ">
+        <a class="btn btn-success ml-auto mr-auto my-3" type="button" href="{% url 'update_review' review.id %}">Update Blog</a>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#delete">Delete Review</button>  
+        <!-- Modal -->
+        <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <p>Are you sure you want to delete this Review ?</p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a class="btn btn-warning" type="button" href="{% url 'delete_review' review.id %}">Delete</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+<br>
+{% endblock %}

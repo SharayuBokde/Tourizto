@@ -1,0 +1,59 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block csscontent %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/book.css' %}">
+{% endblock %}
+
+{% block title %}
+    <title>Booking</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-md-8" style="padding: 30px; background-color:#e0e0e0;">
+            <h1 class="text-center">Book My Tour</h1>
+            <br>
+            <form method="POST" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{form|crispy}}
+                <hr>
+                <div style="text-align: center;">
+                    <input type="submit" class="btn btn-primary center" value="Proceed for Payment">
+                </div>
+            </form>
+        </div>
+        <div class="col-4 book">
+            <div class="why" style="padding: 25px;">
+                <h2  class="text-center"style="padding: 5px; color:#e65100">Why Choose Us</h2>
+                <div class="row " style="padding:10px">
+                    <div class="col-4  icon">
+                        <i class="fas fa-coins mx-auto icon" id="icon"></i>
+                    </div>
+                    <div class="col-8" style="font-weight: 600; margin-top:10px;font-size: 18px;">
+                        <p >BEST PRICE GUARANTEE</p>
+                    </div>
+                    <div class="col-4 icon">
+                        <i class="fas fa-thumbs-up icon mx-auto " id="icon1"></i>
+                    </div>
+                    <div class="col-8" style="font-weight: 600; margin-top:10px;font-size: 18px;">
+                        <p >HIGHLY QUALIFIED SERVICE</p>
+                    </div>
+                    <div class="col-4 icon">
+                        <i class="fas fa-user-shield icon" id="icon2"></i>
+                    </div>
+                    <div class="col-8" style="font-weight: 600; margin-top:10px;font-size: 18px;">
+                        <p >24/7 SUPPORT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block csscontent %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/user.css' %}">
+{% endblock %}
+    
+{% block title %}
+    <title>{{user.username}}</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<br>
+    <div class="changeinfobox">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div style="text-align: center;">
+                <h5><b>Update User Info</b></h5>
+            </div>
+            <br>
+            {{userform|crispy}}
+            {{profileform|crispy}}
+            <hr>
+            <div style="text-align: center;">
+                <input type="submit" class="btn btn-primary" value="Save">
+            </div>
+        </form>
+    </div>
+<br>
+<br>
+<br>
+</div>
+{% endblock content %}
+

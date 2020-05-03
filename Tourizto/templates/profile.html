@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block csscontent %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/user.css' %}">
+{% endblock %}
+    
+{% block title %}
+    <title>{{user.username}}</title>
+{% endblock %}
+
+{% block content %}
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="profile">
+                <img src="{{user.profile.image.url}}" class="img-fluid rounded-circle" style="height: 150px; width: auto;">
+                <div class="card">
+                    <br>
+                    <br>
+                    <h4>{{user.username}}</h4>
+                    <p>{{user.email}}</p>
+                    <p><a href="{% url 'settings' %}"><button><i class="fa fa-cog"></i>&nbsp Settings</button></a></p>
+                  </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            {% if user.is_staff %}
+            <h3>MY BLOGS</h3>
+            <div class="grid-container">
+                {% for blog in blogs %}
+                <div class="grid-item">
+                    <div class="card" style="width: 14rem; height: 14rem;">
+                        <img class="card-img-top" src="{{blog.thumbnail.url}}" alt="Card image cap">
+                        <div class="card-body">
+                            <a  href="{% url 'view_blog' blog.id %}">
+                                <p class="card-title">{{blog.title}}</p>
+                            </a>
+                        </div>
+                      </div>
+                </div>
+                {% endfor %}
+                {% if blog_count is none %}
+                <p>No Blogs</p>
+                {% endif %}
+            </div>  
+            {% endif %}
+            <hr><br>
+            <h3>MY REVIEWS</h3>
+            <div class="grid-container">
+                {% for review in reviews %}
+                <div class="grid-item">
+                    <div class="card" style="width: 14rem; height: 14rem;">
+                        <img class="card-img-top" src="{{review.thumbnail.url}}" alt="Card image cap">
+                        <div class="card-body">
+                            <a  href="{% url 'view_review' review.id %}">
+                                <p class="card-title">{{review.title}}</p>
+                            </a>
+                        </div>
+                      </div>
+                </div>
+                {% endfor %}
+                {% if review_count is none %}
+                <p>No Reviews</p>
+                {% endif %}
+            </div>  
+        </div>
+    </div>
+</div>
+<br><br><br>
+{% endblock content %}
+
+
+
+
+
+
+

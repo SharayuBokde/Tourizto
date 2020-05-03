@@ -1,0 +1,63 @@
+.nav-link
+{
+    color: #083d90 !important; 
+    
+}
+.nav-link a {
+    color:  #083d90!important;
+    text-decoration: none;
+    background-color: transparent;
+   ;
+}
+.nav-item a
+{
+    border-bottom: 2px solid #ffffff00;
+}
+.nav-item a:hover
+{
+    border-bottom: 2px solid pink;
+    transition:0.6s ease; 
+    
+}
+.nav-item a:focus
+{
+    border-bottom: 2px solid pink;
+    transition:0.6s ease; 
+    
+}
+.navbar-brand
+{
+    color: #083d90!important;
+    font-size: 2em;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+}
+
+.footer
+{
+	background-color: #000;
+	color: #fff;
+    font-size: 15px;
+    padding: 40px !important;
+}
+#idk
+{
+    color:#fff;
+}
+.footer h3
+{
+color:#f9676b; 
+}
+.footer2
+{
+	background-color: #000;
+	height:70px;
+	color: #e6e6e6;
+	padding: 20px;
+}
+i
+{
+	font-size: 25px; 
+}

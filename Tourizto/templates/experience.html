@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block csscontent %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/experience.css' %}">
+{% endblock %}
+    
+{% block title %}
+    <title>Experience</title>
+{% endblock %}
+
+{% block jumbotron %}
+<div class="text-capitalize text-center">
+    <h1 class="text1" style="color: white;">
+        EXPERIENCE
+    </h1>
+    <br>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container" style="text-align: justify;">
+    <h2 style="text-align: center;">Experience Best Things to Do in India</h2>
+    <br>
+    <p>India is not just a country but rather a memorable experience. It is one of the most diverse countries that you will find on Earth. Starting with geography, this one country personifies diversity. The highest mountain range in the world, The Great Himalayan Range are the Northern frontiers. The southern borders are formed by the shoreline along Arabian Sea, Bay of Bengal and the Indian Ocean. Not just this, India has one of the coldest places in the world, Drass, places with highest rainfall in world – Mawsynram and Cherrapunji, and also one of the driest places on the Earth – The Thar Desert. Adding to that there are tropical islands, natural forests, a cold desert, a seasonal salt marsh, cities in ruins, cities thriving with energy, unexplored towns and so much more.</p>
+    <p>The things to do in India are as vast as its geography. Let's start with history. The country has a legacy of 5000 years, therefore there is a lot to see and experience in India. There were kingdoms of Mughals and Rajputs, provinces of Nawabs, Nizams, Marathas, Cholas, Chalukyas, Pallavas and many more. The Indian history also has episodes of foreign rule. Dutch, Portuguese, French and British have left their mark in the Indian history. Though the times have gone by, there are amazing forts, palaces, temples and other intriguing architecture. There are also prehistoric caves with amazing inscriptions.</p>
+    <p>About the best places to visit in India, the list is vast. There are hill stations in Himalayas and the Western Ghats. Also, India has a massive shoreline. Goa has the most popular beaches in India. Kerala, Tamil Nadu, Karnataka, Andaman, Odisha, are also blessed with beautiful shores. The backwaters in Kerala is a unique beauty. The network of lagoons, rivers and lakes are navigable in houseboats. Madhya Pradesh has a number of forest reserves abounding in wildlife. Rajasthan has many desert sand dunes.</p>
+    <p>Adventures are also an important part of tourism in India. There are options for skiing, snowboarding, trekking, paragliding, zorbing, river rafting and camping in the Himalayas and the Thar. Water sports of snorkeling, scuba-diving, surfing, parasailing, jet skiing, etc. at the popular beaches are also available. Extreme sports of bungee jumping and skydiving are also available for the adventure aficionados.</p>
+    <p>The list incredible experiences in India does not end here. There are honeymoon tours, solo backpacking, river cruises, cultural visit, pilgrimage yatras, luxury trains, glamping, hot air ballooning, tribal visit, and so much more. Lastly, visitors to India come seeking Ayurveda, Spa and yoga. These are secrets of wellness in India which has increasingly won fans over the world.</p>
+</div>
+<br>
+<br>
+<div class="container">
+        <div class="grid-container">
+            {% for review in reviews %}
+            <div class="grid-item">
+                <div class="card" style="width: 18rem; height:20rem;">
+                    <img class="card-img-top" src="{{review.thumbnail.url}}" alt="Card image cap">
+                    <div class="card-body">
+                        <a  href="{% url 'view_review' review.id %}">
+                            <p class="card-title">{{review.title}}</p>
+                        </a>
+                    </div>
+                  </div>
+            </div>
+            {% endfor %}
+        </div>  
+</div>
+<br>
+<br>
+<br>
+
+{% endblock %} 
