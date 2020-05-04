@@ -23,6 +23,10 @@ def about(request):
 def chatbot(request):
     return render(request, 'chatbot.html')
 
+def contact(request):
+    context = {'title':'Contact'}
+    return render(request, 'contact.html', context)
+
 def new_itenary(request):
     ImageFormset = modelformset_factory(Images, fields=('image',), extra=6)
     if request.method =="POST":

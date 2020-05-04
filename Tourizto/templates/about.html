@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block csscontent %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
 {% endblock %}
     
 {% block title %}
@@ -16,7 +17,6 @@
             <p>Tourizto Online Pvt Ltd based in Gurgaon India, is one of India's leading online travel companies and operates the website Tourizto.com. The company provides information, pricing, availability, and booking facility for domestic and international air travel, domestic and international hotel bookings, holiday packages, buses, trains, in city activities, inter-city and point-to-point cabs, homestays and cruises. As a leading platform of accommodation options, Tourizto provides real-time bookings for more than 83,000 hotels in India and over 800,000 hotels around the world.
             </p>
         </div>
-    
         <div class="col-sm-6">
             <p>Launched in August 2006, Tourizto was ranked the Most Trusted e-Commerce Travel Brand in India in the Economic
                  Times Brand Equity Survey 2016 for the second successive year, and has won the award for 'First Prize - Domestic Tour
@@ -26,5 +26,43 @@
                 <br>      
         </div>
     </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="profile">
+                <img src="{% static '/img/rutu1.jpeg' %}" class="img-fluid rounded-circle" style="height: 100px; width: 100px;">
+                <div class="card">
+                    <br>
+                    <br>
+                    <h4>Rutu Gaglani</h4>
+                    <p>60004180087</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="profile">
+                <img src="{% static '/img/sauravtiwari.jpg' %}" class="img-fluid rounded-circle" style="height: 100px; width: 100px;">
+                <div class="card">
+                    <br>
+                    <br>
+                    <h4>Saurav Tiwari</h4>
+                    <p>60004180097</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="profile">
+                <img src="{% static '/img/sharayub.jpg' %}" class="img-fluid rounded-circle" style="height: 100px; width: 100px;">
+                <div class="card">
+                    <br>
+                    <br>
+                    <h4>Sharayu Bokde</h4>
+                    <p>60004180098</p>
+                </div>
+            </div>
+        </div>      
+    </div>
+    <br><br><br>
 </div>
 {% endblock %}

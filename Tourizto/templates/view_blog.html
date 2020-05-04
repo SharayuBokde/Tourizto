@@ -24,17 +24,6 @@
     <title>{{blog.title}}</title>
 {% endblock %}
 
-{% block jumbotron %}
-<div class="text-capitalize text-center">
-    <img class="rounded-circle article-img" src={{blog.author.profile.image.url}}>
-    <h1 class="text1">
-        {{blog.title}}
-    </h1>
-    <br>
-    <p>Author : {{blog.author}}</p>
-</div>
-{% endblock %}
-
 {% block content %}
 <br>
 <br>
@@ -70,10 +59,14 @@
     </div>
     <br>
     <br>
-    <br>
-    <br>
     <div class="row">
-        <p class="date">Posted on : {{blog.time_stamp}}</p>
+        <div class="col-md-2" style="text-align: center;">
+        <img class="rounded-circle article-img" src="{{blog.author.profile.image.url}}" style="width: 100px; height:100px;">
+        </div>
+        <div class="col-md-10 my-3">
+            <p> Author : {{blog.author}}</p>
+            <p class="date">Posted on : {{blog.time_stamp}}</p>
+        </div>
     </div>
     <br>
     <br>  

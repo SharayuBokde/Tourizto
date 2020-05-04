@@ -22,7 +22,7 @@
 </head>
 <body>
     <!--Navbar-->
-    {% if title == 'Home'%}
+    {% if title == 'Home' or title == 'Contact' %}
     <div class="jumbotron">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="{% url 'home' %}" style="font-family: 'Bangers', cursive;font-weight: 400;">TOURIZTO</a>

@@ -83,15 +83,16 @@
         {% for blog in blogs %}
         {% if blog.id != 1 and blog.id != 5 and blog.id != 7 and blog.id != 2 %}
         <div class="grid-item">
-            <div class="card" style="width: 14rem; height: 14rem;" >
-                <img src="{{blog.thumbnail.url}}" style="width:100px; height:100px;" alt="...">
-                <div class="card-body">
+            <div class="card" style="width:22rem; height:16rem;">
+                <img src="{{blog.thumbnail.url}}" style="width: 350px; height: 175px; text-align:center;" class="card-img-top images" alt="...">
+                <div class="card-body" style="text-align: center;">
                     <a href="{% url 'view_blog' blog.id %}"><h5 class="card-title">{{blog.title}}</h5></a>
                 </div>
             </div>
         </div>
         {% endif %}
         {% endfor %}
+        </div>
     </div>
 </div>
 <br>

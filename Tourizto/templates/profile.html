@@ -34,7 +34,7 @@
                 {% for blog in blogs %}
                 <div class="grid-item">
                     <div class="card" style="width: 14rem; height: 14rem;">
-                        <img class="card-img-top" src="{{blog.thumbnail.url}}" alt="Card image cap">
+                        <img class="card-img-top" style="width:220px; height:125px; text-align:center;" src="{{blog.thumbnail.url}}" alt="Card image cap">
                         <div class="card-body">
                             <a  href="{% url 'view_blog' blog.id %}">
                                 <p class="card-title">{{blog.title}}</p>
@@ -54,7 +54,7 @@
                 {% for review in reviews %}
                 <div class="grid-item">
                     <div class="card" style="width: 14rem; height: 14rem;">
-                        <img class="card-img-top" src="{{review.thumbnail.url}}" alt="Card image cap">
+                        <img class="card-img-top" style="width: 220px; height: 125px; text-align:center;" src="{{review.thumbnail.url}}" alt="Card image cap">
                         <div class="card-body">
                             <a  href="{% url 'view_review' review.id %}">
                                 <p class="card-title">{{review.title}}</p>
