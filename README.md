@@ -13,6 +13,7 @@
   <li>Django Web Framework</li>
   <li>Stripe for Payment</li>
   <li>Dialogflow for Chatbot</li>
+  <li>Frontend : </li>
   <ul>
     <li>HTML</li>
     <li>CSS</li>
