@@ -22,3 +22,21 @@
   </ul>
   <li>PostgreSQL</li>
 </ul>
+
+<div style="text-align:center;">
+<img src="Tourizto Images/homepage.jpg" height="500">
+<img src="Tourizto Images/about.jpg" height="500">
+<img src="Tourizto Images/contact.jpg" height="500">
+<img src="Tourizto Images/itenary.jpg" height="500">
+<img src="Tourizto Images/booking.jpg" height="500">
+<img src="Tourizto Images/checkout.jpg" height="500">
+<img src="Tourizto Images/payment.jpg" height="500">
+<img src="Tourizto Images/email.jpg" height="500">
+<img src="Tourizto Images/gmail.jpg" height="500">
+<img src="Tourizto Images/mybookings.jpg" height="500">
+<img src="Tourizto Images/travelouge.jpg" height="500">
+<img src="Tourizto Images/blog.jpg" height="500">
+<img src="Tourizto Images/review.jpg" height="500">
+<img src="Tourizto Images/profile.jpg" height="500">
+<img src="Tourizto Images/chatbot.jpg" height="500">
+</div>
