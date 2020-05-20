@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block csscontent %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% endblock %}
+    
+{% block title %}
+    <title>Results</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <br>
+    <br>
+    <h2 class="best text-center ">RESULTS!!</h2>
+    <br>
+    <div class="grid-container">
+        {% for dest in dests %}
+        <div class="grid-item">
+            <div class="card" style="width:22rem;">
+                <div class="img-text">
+                    <img src="{{dest.image.url}}" class="card-img-top images" alt="...">
+                    {% if dest.offer %}
+                    <div class="offer12">
+                        <p><span class="percent">{{dest.discount}}%</span> OFF</p></div>
+                        <span class="spOffer"></span>  
+                    {% endif %}  
+                </div>
+                <div class="card-body" style="text-align: center;">
+                    <a href="{% url 'view_itenary' dest.id %}"><h5 class="card-title">{{dest.name}}</h5></a>
+                    <p class="card-text">{{dest.duration}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>       
+<br>
+</div>
+{% endblock %}

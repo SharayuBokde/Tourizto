@@ -74,6 +74,18 @@
                 </ul>
             </div>
         </nav>
+        <br>
+        <br>
+        <div class="text-capitalize text-center">
+            <br><br><br><br><br><br><br><br><br><br>
+            <form method="GET" action="{% url 'search' %}" class="searchform">
+                <fieldset>
+                    <h1 style="color: aliceblue;">Discover an Amazing City</h1>
+                </fieldset>
+                <input size="50" name="q" value="{{request.GET.q}}" placeholder="Search">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
     </div>
     {% elif title == 'Travelouge' or title == 'Blog' or title == 'Experience' %}
     <div class="jumbotron">

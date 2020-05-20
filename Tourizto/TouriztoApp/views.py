@@ -5,6 +5,7 @@ from django.contrib import messages
 from django.conf import settings
 from django.core.mail import send_mail
 from django.shortcuts import redirect, render
+from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from .models import Destination, Images
 from .forms import DestinationForm 
@@ -93,3 +94,16 @@ def delete_itenary(request, id):
     dest.delete()
     messages.error(request, f'The Destination : {dest.name} has been successfully deleted')
     return redirect('home')
+
+def search(request):
+    query = request.GET.get('q')
+    if query:
+        dests = Destination.objects.filter(Q(name__icontains=query) | Q(tagline__icontains=query) | Q(state__icontains=query) | Q(description__icontains=query) | Q(duration__icontains=query) | Q(itenary__icontains=query))
+        print(dests)
+    else:
+        dests = Destination.objects.all().order_by('-id')
+    context = {'dests':dests}
+    return render(request, 'search.html', context)
+
+
+

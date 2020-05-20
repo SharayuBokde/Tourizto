@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+.searchform{
+    
+}
+
 .content-section{
     background-color: whitesmoke;
     box-sizing: border-box;
@@ -15,8 +19,6 @@
     margin-right: auto;
     padding: 30px 30px;
 }
-
-
 
 .nav-link
 {
