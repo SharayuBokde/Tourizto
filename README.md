@@ -30,12 +30,12 @@
 <p><b>Home page:</b> This page provides concise information about the features of the website. The navigation bar contains link to all the other section of the website. The main page displays recommendations with the best deals provided by the tours and Travel Company. Users can login into their accounts and benefit from a wide range of discounts provided by the website. 
 Admin can add new itinerary by forms. This is explained in later under Admin.</p>
 <br>
-<img src="Tourizto Images/homepage.png" style="display: block; margin-left: auto; margin-right: auto; height="800px"; width: auto;">
+<img src="Tourizto Images/homepage.png" style="display: block; margin-left: auto; margin-right: auto; height=auto; width:500px;">
 <br>
 
 <p><b>About page:</b> This page provides information about the development of the company and its operations.</p>
 <br>  
-<img src="Tourizto Images/about.png" style="display: block; margin-left: auto; margin-right: auto; height="500px"; width: auto;">
+<img src="Tourizto Images/about.png" style="display: block; margin-left: auto; margin-right: auto; height=200px; width: auto;">
 <br>
 
 <p><b>Contact page:</b> This page provides contact information like phone number, email-id etc., to the users.</p>
