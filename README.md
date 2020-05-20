@@ -24,12 +24,12 @@
 </ul>
 
 <div style="text-align:center;">
-  <p>Home page:
-This page provides concise information about the features of the website. The navigation bar contains link to all the other section of the website. The main page displays recommendations with the best deals provided by the tours and Travel Company. Users can login into their accounts and benefit from a wide range of discounts provided by the website. 
-Admin can add new itinerary by forms. This is explained in later under Admin.
-</p>
-<img src="Tourizto Images/homepage.png" height="500">
-  <p>About page: This page provides information about the development of the company and its operations.</p>
+  <p><b>Home page:</b> This page provides concise information about the features of the website. The navigation bar contains link to all the other section of the website. The main page displays recommendations with the best deals provided by the tours and Travel Company. Users can login into their accounts and benefit from a wide range of discounts provided by the website. 
+Admin can add new itinerary by forms. This is explained in later under Admin.</p>
+<br>
+<img src="Tourizto Images/homepage.png" height="1000" width=auto>
+<br>
+ <p>About page: This page provides information about the development of the company and its operations.</p>
   
 <img src="Tourizto Images/about.png" height="500">
   <p>Contact page: This page provides contact information like phone number, email-id etc., to the users.</p>
