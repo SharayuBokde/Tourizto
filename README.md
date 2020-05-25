@@ -1,10 +1,4 @@
-<p class="brand" align="center" style="
-    @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
-    color: #083d90!important;
-    font-size: 2em!important;
-    padding-left: 10px;
-    letter-spacing: 2px;
-    font-weight: 600;">Tourizto</p>
+<h1 align="center"><img src="Tourizto Images/brand.png" style="height: 40px; width: auto;"></h1>
 <h3 align="center">OSTL Semester-IV Mini Project</h3>
 <h4>Team</h5>
 <ul>
