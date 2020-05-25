@@ -1,4 +1,4 @@
-<h1 align="center"><img src="Tourizto Images/brand.png" style="height: 40px; width: auto;"></h1>
+<h3 align="center"><img src="Tourizto Images/brand.png" style="height: 10px; width: auto;"></h3>
 <h3 align="center">OSTL Semester-IV Mini Project</h3>
 <h4>Team</h5>
 <ul>
