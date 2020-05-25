@@ -54,7 +54,8 @@ The admin at the same time can add, update and delete a place. To add a place th
       <td><b>Booking and Payment</b></td>
       <td><p>Booking page requires the user to enter the details such as name email-id, phone number, residence area, arrival and departure dates, number of adults and children, accommodation and food preference details. These data are stored in the database. According to the data filled by the customer, total price is calculated by the system.</p>
 <p>Before proceeding for payment the user is redirected to next page where he/she can check the total price and other details. Then the user can finally proceed to the payment gateway.</p>
-<p>Payment page requires the user to enter the details of the credit card necessary to make an online payment.</p><br><p>After successful payment, you are redirected to the page where you cant opt for a confirmation email.</p>
+<p>Payment page requires the user to enter the details of the credit card necessary to make an online payment.</p>
+<p>After successful payment, you are redirected to the page where you cant opt for a confirmation email.</p>
 <p>Once the payment and confirmation email is received you are then redirected to My Bookings page where you can view all you bookings from past.</p>
     </td>
    </tr>
