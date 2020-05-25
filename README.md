@@ -1,4 +1,14 @@
-<h1 align="center">Tourizto</h1>
+<style>
+.brand{
+  @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+ }
+</style>
+
+<p class="brand" align="center" style="color: #083d90!important;
+    font-size: 2em!important;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;">Tourizto</p>
 <h3 align="center">OSTL Semester-IV Mini Project</h3>
 <h4>Team</h5>
 <ul>
