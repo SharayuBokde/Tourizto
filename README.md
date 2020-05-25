@@ -79,18 +79,37 @@ The admin at the same time can add, update and delete a place. To add a place th
 </table>
 
 <h4>Images:</h4>
+<b>Home Page</b>
 <h3 align="center"><img src="Tourizto Images/homepage.png" height=1000 width=auto></h3>
-<h3 align="center"><img src="Tourizto Images/about.png" height=500 width=auto></h3>
-<h3 align="center"><img src="Tourizto Images/contact.png" height=500 width=auto></h3>
+
+<b>About page</b>
+<h3 align="center"><img src="Tourizto Images/about.png" height=200 width=auto></h3>
+
+<b>Contact page</b>
+<h3 align="center"><img src="Tourizto Images/contact.png" height=200 width=auto></h3>
+
+<b>Itenierary</b>
 <h3 align="center"><img src="Tourizto Images/itenary.png" height=1000 width=auto></h3>
-<h3 align="center"><img src="Tourizto Images/booking.png" height=500 width=auto></h3>
-<h3 align="center"><img src="Tourizto Images/checkout.png" height=500 width=auto></h3>
-<h3 align="center"><img src="Tourizto Images/payment.png" height=500 width=auto></h3>
-<h3 align="center"><img src="Tourizto Images/email.png" height=500 width=auto></h3>
+
+<b>Booking and Payment</b>
+<h3 align="center"><img src="Tourizto Images/booking.png" height=200 width=auto></h3>
+<h3 align="center"><img src="Tourizto Images/checkout.png" height=200 width=auto></h3>
+<h3 align="center"><img src="Tourizto Images/payment.png" height=200 width=auto></h3>
+<h3 align="center"><img src="Tourizto Images/email.png" height=200 width=auto></h3>
 <h3 align="center"><img src="Tourizto Images/gmail.png" height=500 width=auto></h3>
-<h3 align="center"><img src="Tourizto Images/mybookings.png" height=500 width=auto></h3>
+
+<b>My Bookings</b>
+<h3 align="center"><img src="Tourizto Images/mybookings.png" height=200 width=auto></h3>
+
+<b>Travelouge</b>
 <h3 align="center"><img src="Tourizto Images/travelouge.png" height=1000 width=auto></h3>
-<h3 align="center"><img src="Tourizto Images/blog.png" height=500 width=auto></h3>
-<h3 align="center"><img src="Tourizto Images/review.png" height=500 width=auto></h3>
+<h3 align="center"><img src="Tourizto Images/blog.png" height=400 width=auto></h3>
+
+<b>Review</b>
+<h3 align="center"><img src="Tourizto Images/review.png" height=300 width=auto></h3>
+
+<b>Profile</b>
 <h3 align="center"><img src="Tourizto Images/profile.png" height=500 width=auto></h3>
+
+<b>Chatbot</b>
 <h3 align="center"><img src="Tourizto Images/chatbot.png" height=500 width=auto></h3>
