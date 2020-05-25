@@ -25,53 +25,53 @@
   <li>PostgreSQL</li>
 </ul>
 <br>
-<br>
+
 <h4>Pages :</h4>
 <p><b>Home page:</b> This page provides concise information about the features of the website. The navigation bar contains link to all the other section of the website. The main page displays recommendations with the best deals provided by the tours and Travel Company. Users can login into their accounts and benefit from a wide range of discounts provided by the website. 
 Admin can add new itinerary by forms. This is explained in later under Admin.</p>
 <br>
-<img src="Tourizto Images/homepage.png" style="display: block; margin-left: auto; margin-right: auto; height=500px; width:auto;">
+<img src="Tourizto Images/homepage.png" style="display: block; margin-left: auto; margin-right: auto; height: 300px; width:auto;">
 <br>
 
 <p><b>About page:</b> This page provides information about the development of the company and its operations.</p>
 <br>  
-<img src="Tourizto Images/about.png" style="display: block; margin-left: auto; margin-right: auto; height=100px; width: auto;">
+<img src="Tourizto Images/about.png" style="display: block; margin-left: auto; margin-right: auto; height: 80px; width: auto;">
 <br>
 
 <p><b>Contact page:</b> This page provides contact information like phone number, email-id etc., to the users.</p>
 <br>
-<img src="Tourizto Images/contact.png" style="display: block; margin-left: auto; margin-right: auto; height=100px; width: auto;">
+<img src="Tourizto Images/contact.png" style="display: block; margin-left: auto; margin-right: auto; height: 80px; width: auto;">
 <br>
 <p><b>Itenierary:</b> This page provides complete information of a desired destination. It provides the customer with overview, highlights, itinerary, estimated price and inquiry option. It also specifies all the terms and conditions.
 The admin at the same time can add, update and delete a place. To add a place the admin needs to enter information as specified in the model.
 </p>
 <br>
-<img src="Tourizto Images/itenary.png" style="display: block; margin-left: auto; margin-right: auto; height=500px; width: auto;">
+<img src="Tourizto Images/itenary.png" style="display: block; margin-left: auto; margin-right: auto; height: 300px; width: auto;">
 <br>
 
 <p><b>Booking and Payment:</b>
 Booking page requires the user to enter the details such as name email-id, phone number, residence area, arrival and departure dates, number of adults and children, accommodation and food preference details. These data are stored in the database. According to the data filled by the customer, total price is calculated by the system.
 </p>
 <br>
-<img src="Tourizto Images/booking.png"  style="display: block; margin-left: auto; margin-right: auto; height=100px; width: auto;">
+<img src="Tourizto Images/booking.png"  style="display: block; margin-left: auto; margin-right: auto; height: 80px; width: auto;">
 <br>
 <p>Before proceeding for payment the user is redirected to next page where he/she can check the total price and other details. Then the user can finally proceed to the payment gateway.</p>
 <br>
-<img src="Tourizto Images/checkout.png" style="display: block; margin-left: auto; margin-right: auto; height=100px; width: auto;">
+<img src="Tourizto Images/checkout.png" style="display: block; margin-left: auto; margin-right: auto; height: 80px; width: auto;">
 <br>
 <p>Payment page requires the user to enter the details of the credit card necessary to make an online payment.</p>
 <br>
-<img src="Tourizto Images/payment.png" style="display: block; margin-left: auto; margin-right: auto; height=100px; width: auto;">
+<img src="Tourizto Images/payment.png" style="display: block; margin-left: auto; margin-right: auto; height: 80px; width: auto;">
 <br>
 <p>After successful payment, you are redirected to the page where you cant opt for a confirmation email.</p>
 <br>
-<img src="Tourizto Images/email.png" style="display: block; margin-left: auto; margin-right: auto; height=100px; width: auto;">
+<img src="Tourizto Images/email.png" style="display: block; margin-left: auto; margin-right: auto; height: 80px; width: auto;">
 <br>
-<img src="Tourizto Images/gmail.png" style="display: block; margin-left: auto; margin-right: auto; height=100px; width: auto;">
+<img src="Tourizto Images/gmail.png" style="display: block; margin-left: auto; margin-right: auto; height: 80px; width: auto;">
 <br>
 <p>Once the payment and confirmation email is received you are then redirected to My Bookings page where you can view all you bookings from past.</p>
 <br>
-<img src="Tourizto Images/mybookings.png" style="display: block; margin-left: auto; margin-right: auto; height=100px; width: auto;">
+<img src="Tourizto Images/mybookings.png" style="display: block; margin-left: auto; margin-right: auto; height: 80px; width: auto;">
 <br>
 
 <p><b>Travelouge:</b>
@@ -79,21 +79,21 @@ Travelouge is an addition feature in our website which provides the user with in
 <br>
 <p>Admin needs to enter the images as well as description which are stored in the database. The user can view and like the blog. 
 </p>
-<img src="Tourizto Images/travelouge.png" style="display: block; margin-left: auto; margin-right: auto; height=500px; width: auto;">
+<img src="Tourizto Images/travelouge.png" style="display: block; margin-left: auto; margin-right: auto; height: 300px; width: auto;">
 <br>
-<img src="Tourizto Images/blog.png" style="display: block; margin-left: auto; margin-right: auto; height=100px; width: auto;">
+<img src="Tourizto Images/blog.png" style="display: block; margin-left: auto; margin-right: auto; height: 80px; width: auto;">
 <br>
 
 <p><b>Review:</b> A review enables the user to share their travel experience with other users. User can refer to the review posted by other users in their booking process.</p>
 <br>
-<img src="Tourizto Images/review.png" style="display: block; margin-left: auto; margin-right: auto; height=100px; width: auto;">
+<img src="Tourizto Images/review.png" style="display: block; margin-left: auto; margin-right: auto; height: 80px; width: auto;">
 <br>
 
 <p><b>Profile:</b> This page displays the user’s profile which contains username, email, blogs posted by the user and reviews posted by the user. </p>
 <br>
-<img src="Tourizto Images/profile.png" style="display: block; margin-left: auto; margin-right: auto; height=100px; width: auto;">
+<img src="Tourizto Images/profile.png" style="display: block; margin-left: auto; margin-right: auto; height:80px; width: auto;">
 <br>
 
 <p><b>Chatbot:</b> The purpose of this feature is to answer the queries faced the user during their booking process. It asks for basic details like name, destination for tour, arrival and departure dates, email address from where we will be able to communicate with the user for further procedures.</p>
 <br>
-<img src="Tourizto Images/chatbot.png" style="display: block; margin-left: auto; margin-right: auto; height=100px; width: auto;">
+<img src="Tourizto Images/chatbot.png" style="display: block; margin-left: auto; margin-right: auto; height: 80px; width: auto;">
