@@ -33,16 +33,16 @@
       <th>Description</th>
    </tr>
    <tr>
-      <td><b>Home page</b></td>
+      <td><b>Home</b></td>
       <td><p>This page provides concise information about the features of the website. The navigation bar contains link to all the other section of the website. The main page displays recommendations with the best deals provided by the tours and Travel Company. Users can login into their accounts and benefit from a wide range of discounts provided by the website. 
 Admin can add new itinerary by forms. This is explained in later under Admin.</p></td>
    </tr>
   <tr>
-      <td><b>About page</b></td>
+      <td><b>About</b></td>
       <td><p>This page provides information about the development of the company and its operations.</p></td>
    </tr>
   <tr>
-      <td><b>Contact page</b></td>
+      <td><b>Contact</b></td>
       <td><p>This page provides contact information like phone number, email-id etc., to the users.</p></td>
    </tr>
   <tr>
