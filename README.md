@@ -80,36 +80,36 @@ The admin at the same time can add, update and delete a place. To add a place th
 
 <h4>Images:</h4>
 <b>Home Page</b>
-<h3 align="center"><img src="Tourizto Images/homepage.png" height=auto width=100%></h3>
+<h3 align="center"><img src="Tourizto Images/homepage.png" height=auto width=75%></h3>
 
 <b>About page</b>
-<h3 align="center"><img src="Tourizto Images/about.png" height=auto width=100%></h3>
+<h3 align="center"><img src="Tourizto Images/about.png" height=auto width=75%></h3>
 
 <b>Contact page</b>
-<h3 align="center"><img src="Tourizto Images/contact.png" height=auto width=100%></h3>
+<h3 align="center"><img src="Tourizto Images/contact.png" height=auto width=75%></h3>
 
 <b>Itenierary</b>
-<h3 align="center"><img src="Tourizto Images/itenary.png" height=auto width=100%></h3>
+<h3 align="center"><img src="Tourizto Images/itenary.png" height=auto width=75%></h3>
 
 <b>Booking and Payment</b>
-<h3 align="center"><img src="Tourizto Images/booking.png" height=auto width=100%></h3>
-<h3 align="center"><img src="Tourizto Images/checkout.png" height=auto width=100%></h3>
-<h3 align="center"><img src="Tourizto Images/payment.png" height=auto width=100%></h3>
-<h3 align="center"><img src="Tourizto Images/email.png" height=auto width=100%></h3>
-<h3 align="center"><img src="Tourizto Images/gmail.png" height=auto width=100%></h3>
+<h3 align="center"><img src="Tourizto Images/booking.png" height=auto width=75%></h3>
+<h3 align="center"><img src="Tourizto Images/checkout.png" height=auto width=75%></h3>
+<h3 align="center"><img src="Tourizto Images/payment.png" height=auto width=75%></h3>
+<h3 align="center"><img src="Tourizto Images/email.png" height=auto width=75%></h3>
+<h3 align="center"><img src="Tourizto Images/gmail.png" height=auto width=75%></h3>
 
 <b>My Bookings</b>
-<h3 align="center"><img src="Tourizto Images/mybookings.png" height=auto width=100%></h3>
+<h3 align="center"><img src="Tourizto Images/mybookings.png" height=auto width=75%></h3>
 
 <b>Travelouge</b>
-<h3 align="center"><img src="Tourizto Images/travelouge.png" height=auto width=100%></h3>
-<h3 align="center"><img src="Tourizto Images/blog.png" height=auto width=100%></h3>
+<h3 align="center"><img src="Tourizto Images/travelouge.png" height=auto width=75%></h3>
+<h3 align="center"><img src="Tourizto Images/blog.png" height=auto width=75%></h3>
 
 <b>Review</b>
-<h3 align="center"><img src="Tourizto Images/review.png" height=auto width=100%></h3>
+<h3 align="center"><img src="Tourizto Images/review.png" height=auto width=75%></h3>
 
 <b>Profile</b>
-<h3 align="center"><img src="Tourizto Images/profile.png" height=auto width=100%></h3>
+<h3 align="center"><img src="Tourizto Images/profile.png" height=auto width=75%></h3>
 
 <b>Chatbot</b>
-<h3 align="center"><img src="Tourizto Images/chatbot.png" height=auto width=100%></h3>
+<h3 align="center"><img src="Tourizto Images/chatbot.png" height=auto width=75%></h3>
