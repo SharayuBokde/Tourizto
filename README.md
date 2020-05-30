@@ -80,16 +80,16 @@ The admin at the same time can add, update and delete a place. To add a place th
 
 <h4>Images:</h4>
 <b>Home Page</b>
-<h3 align="center"><img src="Tourizto Images/homepage.png" height=1000 width=auto></h3>
+<h3 align="center"><img src="Tourizto Images/homepage.png" height=auto width=100%></h3>
 
 <b>About page</b>
-<h3 align="center"><img src="Tourizto Images/about.png" height=200 width=auto></h3>
+<h3 align="center"><img src="Tourizto Images/about.png" height=auto width=100%></h3>
 
 <b>Contact page</b>
-<h3 align="center"><img src="Tourizto Images/contact.png" height=200 width=auto></h3>
+<h3 align="center"><img src="Tourizto Images/contact.png" height=auto width=100%></h3>
 
 <b>Itenierary</b>
-<h3 align="center"><img src="Tourizto Images/itenary.png" height=1000 width=auto></h3>
+<h3 align="center"><img src="Tourizto Images/itenary.png" height=auto width=100%></h3>
 
 <b>Booking and Payment</b>
 <h3 align="center"><img src="Tourizto Images/booking.png" height=200 width=auto></h3>
