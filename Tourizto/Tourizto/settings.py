@@ -83,9 +83,9 @@ WSGI_APPLICATION = 'Tourizto.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'Tourizto',
+        'NAME':'Database name',
         'USER':'postgres',
-        'PASSWORD':'santro232',
+        'PASSWORD':'password',
         'HOST':'localhost'
     }
 }
