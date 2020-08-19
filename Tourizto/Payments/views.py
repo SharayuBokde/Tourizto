@@ -11,7 +11,7 @@ from .models import Booking
 from .forms import BookingForm
 from TouriztoApp.models import Destination
 
-stripe.api_key = "sk_test_xkNjWpJMs9Bof3ZcejRwtXCZ00C0vi2STS"
+stripe.api_key = "paste your api key here"
 
 # Create your views here.
 def mybookings(request):
