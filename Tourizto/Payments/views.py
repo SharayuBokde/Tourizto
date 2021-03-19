@@ -11,7 +11,7 @@ from .models import Booking
 from .forms import BookingForm
 from TouriztoApp.models import Destination
 
-stripe.api_key = "sk_test_xkNjWpJMs9Bof3ZcejRwtXCZ00C0vi2STS"
+stripe.api_key = "paste your api key here"
 
 # Create your views here.
 def mybookings(request):
@@ -129,8 +129,8 @@ def confirmation_mail(request, id):
         </html>
         """
         #The mail addresses and password
-        sender_address = 'sharayubokde5@gmail.com'
-        sender_pass = 'sharayu2020'
+        sender_address = '_Enter senders email address_'
+        sender_pass = '_Enter password for email provided in sender_address_'
         receiver_address = booking.customer_email
     
         #Setup the MIME
