@@ -1,12 +1,29 @@
-<h3 align="center"><img src="Tourizto Images/brand.png" height=50 width=auto></h3>
-<h3 align="center">OSTL Semester-IV Mini Project</h3>
-<h4>Team</h5>
+<br />
+<p align="center">
+  <img src="Tourizto Images/brand.png" alt="Logo" height=50 width=auto>
+  <img src="https://imgur.com/pBJRVmv.png" alt="Logo" width="80" height="80">
 
-**_Rutu Gaglani_** - [Github](https://github.com/rutugaglani) - rutugaglani@gmail.com
+  <p align="center">
+    A web app that lets you book travel tickets according to your convenience!
+    <br />
+    <a href="https://github.com/SharayuBokde/Tourizto"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    View Demo
+    ·
+    <a href="https://github.com/SharayuBokde/Tourizto/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/SharayuBokde/Tourizto/issues">Request Feature</a>
+  </p>
+</p>
 
-**_Saurav Tiwari_** - [Github](https://github.com/sauravtiwari27) - sauravtiwari27@gmail.com
+## Team 
 
-**_Sharayu Bokde_** - [Github](https://github.com/SharayuBokde) - bokde.sharayu@gmail.com
+**_Rutu Gaglani_** - [Github](https://github.com/rutugaglani) - Frontend & Graphic Design
+
+**_Saurav Tiwari_** - [Github](https://github.com/sauravtiwari27) - Frontend & Graphic Design
+
+**_Sharayu Bokde_** - [Github](https://github.com/SharayuBokde) - Full-stack & Database
 
 <br>
 <p>Tourizto is a complete web package. Tourizto contains relevant package and services that are of a need to customers. Tourizto tours and travel has various packages which are basically services that our website provides. Best part is, Tourizto tours and travel is designed especially for customers who have no time to select and manage their holidays. Tourizto tours and travel saves a lot of time for its user by giving them detailed itinerary about the day-to-plan. Tourizto is a secured web application made using Django framework. India, one of the most beautiful locations of South Asia is also among popular countries of the world. Therefore this tourist hub welcomes more than a 5 million foreign tourist from different location of the world. A trip to this beautiful country can reveal numerous mystic things regarding its culture, art, tradition; history etc. known for its spectacular culture, India has become a favored place of visit for travelers from all over the world. Each state of this wonderful country is unique when it comes to the scenic beauty nature of the people living in the country and hospitality of Indians.</p>
@@ -27,8 +44,6 @@
   <li>PostgreSQL</li>
 </ul>
 <br>
-
-<h3 align="center"><img src="Tourizto Images/tourizto-gif.gif" height=auto width=75%></h3>
 
 <h4>Pages :</h4>
 <table>
