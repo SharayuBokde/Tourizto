@@ -1,8 +1,7 @@
 <br />
 <p align="center">
   <img src="Tourizto Images/brand.png" alt="Logo" height=50 width=auto>
-  <img src="https://imgur.com/pBJRVmv.png" alt="Logo" width="80" height="80">
-
+  
   <p align="center">
     A web app that lets you book travel tickets according to your convenience!
     <br />
