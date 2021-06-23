@@ -1,6 +1,7 @@
 <h3 align="center"><img src="Tourizto Images/brand.png" height=50 width=auto></h3>
 <h3 align="center">OSTL Semester-IV Mini Project</h3>
 <h4>Team</h5>
+
 **_Rutu Gaglani_** - [Github](https://github.com/rutugaglani) - rutugaglani@gmail.com
 
 **_Saurav Tiwari_** - [Github](https://github.com/sauravtiwari27) - sauravtiwari27@gmail.com
