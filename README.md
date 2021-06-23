@@ -8,12 +8,6 @@
 
 **_Sharayu Bokde_** - [Github](https://github.com/SharayuBokde) - bokde.sharayu@gmail.com
 
-
-<ul>
-  <li>Rutu Gaglani</li>
-  <li>Saurav Tiwari</li>
-  <li>Sharayu Bokde</li>
-</ul>
 <br>
 <p>Tourizto is a complete web package. Tourizto contains relevant package and services that are of a need to customers. Tourizto tours and travel has various packages which are basically services that our website provides. Best part is, Tourizto tours and travel is designed especially for customers who have no time to select and manage their holidays. Tourizto tours and travel saves a lot of time for its user by giving them detailed itinerary about the day-to-plan. Tourizto is a secured web application made using Django framework. India, one of the most beautiful locations of South Asia is also among popular countries of the world. Therefore this tourist hub welcomes more than a 5 million foreign tourist from different location of the world. A trip to this beautiful country can reveal numerous mystic things regarding its culture, art, tradition; history etc. known for its spectacular culture, India has become a favored place of visit for travelers from all over the world. Each state of this wonderful country is unique when it comes to the scenic beauty nature of the people living in the country and hospitality of Indians.</p>
 <br>
