@@ -28,6 +28,8 @@
 </ul>
 <br>
 
+<h3 align="center"><img src="Tourizto Images/tourizto-gif.gif" height=auto width=75%></h3>
+
 <h4>Pages :</h4>
 <table>
   <tr>
