@@ -96,7 +96,21 @@ The admin at the same time can add, update and delete a place. To add a place th
    </tr>
 </table>
 
-<h4>Images:</h4>
+### Install
+
+Creating and activating virtual environment
+
+    virtualenv venv
+    "venv/Scripts/activate"
+      
+Navigate back to the main folder. Installing requirements and making migrations
+
+    pip install -r requirements.txt
+    python manage.gy makemigrations
+    python manage.py migrate
+    python manage.py runserver
+
+## About the Project
 <b>Home Page</b>
 <h3 align="center"><img src="Tourizto Images/homepage.png" height=auto width=75%></h3>
 
