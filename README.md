@@ -101,7 +101,8 @@ The admin at the same time can add, update and delete a place. To add a place th
 Creating and activating virtual environment
 
     virtualenv venv
-    "venv/Scripts/activate"
+    cd scripts
+    activate
       
 Navigate back to the main folder. Installing requirements and making migrations
 
