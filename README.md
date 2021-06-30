@@ -25,6 +25,9 @@
 **_Sharayu Bokde_** - [Github](https://github.com/SharayuBokde) - Full-stack & Database
 
 <br>
+
+
+## About the Project
 <p>Tourizto is a complete web package. Tourizto contains relevant package and services that are of a need to customers. Tourizto tours and travel has various packages which are basically services that our website provides. Best part is, Tourizto tours and travel is designed especially for customers who have no time to select and manage their holidays. Tourizto tours and travel saves a lot of time for its user by giving them detailed itinerary about the day-to-plan. Tourizto is a secured web application made using Django framework. India, one of the most beautiful locations of South Asia is also among popular countries of the world. Therefore this tourist hub welcomes more than a 5 million foreign tourist from different location of the world. A trip to this beautiful country can reveal numerous mystic things regarding its culture, art, tradition; history etc. known for its spectacular culture, India has become a favored place of visit for travelers from all over the world. Each state of this wonderful country is unique when it comes to the scenic beauty nature of the people living in the country and hospitality of Indians.</p>
 <br>
 <h3>Technologies used : </h3>
@@ -44,7 +47,7 @@
 </ul>
 <br>
 
-<h3 align="center"><img src="Tourizto Images/tourizto.gif" height=auto width=75%></h3>
+<h3 align="center"><img src="Tourizto Images/tourizto.gif" height=auto width=90%></h3>
 
 <h4>Pages :</h4>
 <table>
@@ -113,38 +116,4 @@ Navigate back to the main folder. Installing requirements and making migrations
     python manage.py migrate
     python manage.py runserver
 
-## About the Project
-<b>Home Page</b>
-<h3 align="center"><img src="Tourizto Images/homepage.png" height=auto width=75%></h3>
 
-<b>About page</b>
-<h3 align="center"><img src="Tourizto Images/about.png" height=auto width=75%></h3>
-
-<b>Contact page</b>
-<h3 align="center"><img src="Tourizto Images/contact.png" height=auto width=75%></h3>
-
-<b>Itenierary</b>
-<h3 align="center"><img src="Tourizto Images/itenary.png" height=auto width=75%></h3>
-
-<b>Booking and Payment</b>
-<h3 align="center"><img src="Tourizto Images/booking.png" height=auto width=75%></h3>
-<h3 align="center"><img src="Tourizto Images/checkout.png" height=auto width=75%></h3>
-<h3 align="center"><img src="Tourizto Images/payment.png" height=auto width=75%></h3>
-<h3 align="center"><img src="Tourizto Images/email.png" height=auto width=75%></h3>
-<h3 align="center"><img src="Tourizto Images/gmail.png" height=auto width=75%></h3>
-
-<b>My Bookings</b>
-<h3 align="center"><img src="Tourizto Images/mybookings.png" height=auto width=75%></h3>
-
-<b>Travelouge</b>
-<h3 align="center"><img src="Tourizto Images/travelouge.png" height=auto width=75%></h3>
-<h3 align="center"><img src="Tourizto Images/blog.png" height=auto width=75%></h3>
-
-<b>Review</b>
-<h3 align="center"><img src="Tourizto Images/review.png" height=auto width=75%></h3>
-
-<b>Profile</b>
-<h3 align="center"><img src="Tourizto Images/profile.png" height=auto width=75%></h3>
-
-<b>Chatbot</b>
-<h3 align="center"><img src="Tourizto Images/chatbot.png" height=auto width=75%></h3>
