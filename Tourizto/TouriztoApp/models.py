@@ -12,7 +12,7 @@ class Destination(models.Model):
     image = models.ImageField(upload_to='pics')
     price = models.IntegerField()
     offer = models.BooleanField(default=False)
-    discount = models.IntegerField()
+    discount = models.IntegerField(default=0)
     highlights = models.TextField()
     itenary_titles = models.TextField()
     itenary = models.TextField()

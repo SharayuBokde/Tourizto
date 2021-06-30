@@ -1,0 +1,136 @@
+
+.subNav
+{
+    border: 2px solid #E65100;
+    border-radius: 30px;
+    height:60px;
+    padding: 5px;
+    text-align: center;
+    background-color: #E65100;
+    margin: 5% 0%;
+}
+.subNav button
+{
+    border-radius: 20px;
+    border: 2px solid #E65100;
+    height: 40px;
+    margin: auto 10px;
+    padding: 5px 12px;
+    background-color: #E65100;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #fff;
+    
+}
+.subNav button:hover
+{
+     border: 2px solid #fff; 
+    background-color: #fff;
+    color: #000;
+  
+
+}
+
+.path
+{
+    height: 3%;
+    border-bottom: 1px solid #083d90;
+
+}
+
+.carousel-item img
+{
+    height: 60%;
+}
+
+.fa-circle
+{
+    font-size: 25px;
+   color: #083d90;
+   margin-right: 4px;
+   cursor: pointer;
+}
+#hideDay1,#hideDay2,#hideDay3,#hideDay4,#hideDay5,#hideDay6
+{
+    display: none;
+}
+.fa-check,.fa-times,.fa-heart
+{
+    margin-right: 6px;
+}
+.dots
+{
+   display: flex;
+    justify-content: center;
+    font-size: 50px !important;
+    margin: 1px !important;
+    padding: 0 !important;
+}
+.why
+{
+    background-color: #eee;
+}
+
+.yes
+{   display: flex;
+    justify-content: center;
+    background-color: #E65100;
+    border: 1px solid #E65100;
+    margin-left: 40%;
+    margin-bottom:30px;
+    padding: 5px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #fff;
+
+}
+hr{
+    border-top: 1px solid grey;
+}
+h2
+{
+   color:#e65100; 
+}
+h4{
+    color: #083d90;
+}
+
+.icon i{
+    text-align: center;
+    background-color: #e65100;
+    font-size: 40px;
+    border-radius: 50px;
+    padding: 10px;
+    color: #fff !important;
+
+}
+.submit
+{
+    background-color: #E65100;
+    border: 1px solid #E65100;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 10px auto auto 70px;
+    border-radius: 20px;
+    height: 40px;
+    color: #fff;
+
+    
+}
+.place
+{
+    display: -webkit-inline-box;
+}
+.sidebar form{
+    background-color: #eee;
+    padding:20px 10px;
+    width: 100%;
+    margin-top: 20%;
+}
+.addInput
+{
+    margin: 6px auto;
+    width: 100%;
+    justify-content: center;
+}

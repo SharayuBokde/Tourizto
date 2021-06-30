@@ -12,14 +12,14 @@
         }
         .jumbotron{
             height: 70vh;
-            background-image: url({{blog.thumbnail.url}});
+            background-image: url({{blog.image_set.first.display_image.url}});
             background-color: #fff;
             margin: 0;
             padding: 0;
         }
     </style>
 {% endblock %}
-    
+
 {% block title %}
     <title>{{blog.title}}</title>
 {% endblock %}

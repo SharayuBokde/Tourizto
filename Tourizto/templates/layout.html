@@ -50,6 +50,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'experience' %}">EXPERIENCE</a>
                     </li>
+                    
+                    
                     {% if user.is_authenticated %}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 18px;">
@@ -71,13 +73,19 @@
                         <a class="nav-link">SIGNUP</a>
                     </li>  
                     {% endif %}
+                    <li class="nav-item">
+                        <a href="{% url 'chatbot' %}">
+                            <img src="{% static 'img/chat-big1.gif' %}" width="50" height="50" style="padding: 7;">
+                        </a>        
+                    </li>
                 </ul>
             </div>
         </nav>
         <br>
         <br>
+        {% if title == 'Home' %}
         <div class="text-capitalize text-center">
-            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br>
             <form method="GET" action="{% url 'search' %}" class="searchform">
                 <fieldset>
                     <h1 style="color: aliceblue;">Discover an Amazing City</h1>
@@ -86,6 +94,7 @@
                 <button type="submit" class="btn btn-primary">Search</button>
             </form>
         </div>
+        {% endif %}
     </div>
     {% elif title == 'Travelouge' or title == 'Blog' or title == 'Experience' %}
     <div class="jumbotron">
@@ -99,9 +108,15 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="{% url 'home' %}">HOME</a>
                     </li>
+                    {% if title == 'Travelouge' %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'experience' %}">EXPERIENCE</a>
                     </li>
+                    {% elif title == 'Experience' %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'travelouge' %}">TRAVELOUGE</a>
+                    </li>
+                    {% endif %}
                     {% if user.is_authenticated %}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 18px;">

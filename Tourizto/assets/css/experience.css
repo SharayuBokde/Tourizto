@@ -1,0 +1,74 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item{
+    margin-top: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+body{
+    font-size:1.1rem;
+    font-style: 'Rambla', sans-serif;;
+}
+.icon
+{
+    text-align: center;
+    background-color: #e65100;
+    font-size: 40px;
+    border-radius: 50px;
+    padding: 10px;
+    color: #fff !important;
+    margin-left: 130px !important;
+}
+
+.jumbotron {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+.jumbotron{
+    height: 95vh;
+    background-image: url('/static/img/nature2.jpg');
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.blogimg1 img
+{
+   width:100%;
+   height:400px;
+}
+.blog1 .blogimg1
+{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.bgGreen
+{
+    background-color: #ff9800;
+    color:#fff;
+    text-align:left;
+}
+.blogimg2
+{
+    width: auto;
+    height: 250px;
+}
+
+.bgw
+{
+    background-color: white;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 40px;
+    padding: 30px;
+}
+.blogInfo
+{
+    padding: 50px;
+}

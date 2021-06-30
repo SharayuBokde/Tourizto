@@ -81,7 +81,6 @@
         <br>
         <div class="grid-container">
         {% for blog in blogs %}
-        {% if blog.id != 1 and blog.id != 5 and blog.id != 7 and blog.id != 2 %}
         <div class="grid-item">
             <div class="card" style="width:22rem; height:16rem;">
                 <img src="{{blog.thumbnail.url}}" style="width: 350px; height: 175px; text-align:center;" class="card-img-top images" alt="...">
@@ -90,7 +89,6 @@
                 </div>
             </div>
         </div>
-        {% endif %}
         {% endfor %}
         </div>
     </div>

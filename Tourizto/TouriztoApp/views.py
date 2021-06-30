@@ -55,9 +55,8 @@ def view_itenary(request, id):
     dest = Destination.objects.get(id=id)
     print(f'destination is {dest}')
     price = int(dest.price)
-    if dest.offer:
-        disc = int(dest.discount)
-        discounted_rate =  price - (disc*price)/100
+    disc = int(dest.discount)
+    discounted_rate =  price - (disc*price)/100
     description = dest.description.split('#')
     highlights = dest.highlights.split('#')
     itenary_titles = dest.itenary_titles.split('#')

@@ -6,10 +6,6 @@
     margin: 0;
 }
 
-.searchform{
-    
-}
-
 .content-section{
     background-color: whitesmoke;
     box-sizing: border-box;
@@ -86,7 +82,6 @@ i
 
 .offer-bg-bottom{
 	background:#1b282a;
-	position: fixed;
 	bottom: 0px;
 	width:100%;
 	z-index:99;
@@ -100,10 +95,4 @@ i
 	position:absolute;
 	right: 160px;
 	bottom: 0px;
-}
-.gif{
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 100;
 }

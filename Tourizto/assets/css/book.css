@@ -1,0 +1,24 @@
+.newdestinationbox{
+background-color: whitesmoke;
+box-sizing: border-box;
+width: 300px;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+padding: 50px 50px;
+}
+
+.icon i{
+text-align: center;
+background-color: #e65100;
+font-size: 40px;
+border-radius: 50px;
+padding: 10px;
+color: #fff !important;
+margin-top: 10px;
+
+}
+.why
+{
+  background-color: #e0e0e0;
+}

@@ -10,8 +10,9 @@ import stripe
 from .models import Booking
 from .forms import BookingForm
 from TouriztoApp.models import Destination
+import os
 
-stripe.api_key = "paste your api key here"
+stripe.api_key =  os.environ.get('STRIPE_API_KEY')
 
 # Create your views here.
 def mybookings(request):
@@ -129,8 +130,8 @@ def confirmation_mail(request, id):
         </html>
         """
         #The mail addresses and password
-        sender_address = '_Enter senders email address_'
-        sender_pass = '_Enter password for email provided in sender_address_'
+        sender_address = os.environ.get('SENDER_EMAIL')
+        sender_pass = os.environ.get('SENDER_PASSWORD')
         receiver_address = booking.customer_email
     
         #Setup the MIME
@@ -155,7 +156,7 @@ def confirmation_mail(request, id):
         session.sendmail(sender_address, receiver_address, text)
         session.quit()
         
-        messages.success(request, f'Thankyou for ordering from Travello.com to {name}')
+        messages.success(request, f'Thankyou for ordering from Tourizto.com : {name}')
         return redirect('mybookings')
     else:
         return redirect('home')
