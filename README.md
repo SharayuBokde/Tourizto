@@ -53,7 +53,7 @@ Tourizto is a complete web package. Tourizto contains relevant package and servi
   * JavaScript
 * PostgreSQL
 
-### Pages:
+## Pages:
 
 * Home - This page provides concise information about the features of the website. The navigation bar contains link to all the other section of the website. The main page displays recommendations with the best deals provided by the tours and Travel Company. Users can login into their accounts and benefit from a wide range of discounts provided by the website. Admin can add new itinerary by forms. This is explained in later under Admin.
 
