@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <img src="Tourizto Images/brand.png" alt="Logo" height=50 width=auto>
+  <img src="Tourizto Images/0brand.png" alt="Logo" height=50 width=auto>
   
   <p align="center">
     A web app that lets you book travel tickets according to your convenience!
@@ -43,6 +43,8 @@
   <li>PostgreSQL</li>
 </ul>
 <br>
+
+<h3 align="center"><img src="Tourizto Images/tourizto.gif" height=auto width=75%></h3>
 
 <h4>Pages :</h4>
 <table>
